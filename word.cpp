@@ -9,8 +9,7 @@ int main(int argv, char **argc) {
   ifstream fin(argc[1]);
   string nextword;
 
-  while (!fin.eof()) {
-    fin >> nextword;
+  while (fin >> nextword) {
     words[nextword]++;
   }
 
